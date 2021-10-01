@@ -23,10 +23,9 @@ async def on_message(message):
         await message.channel.send('You can test bots made by you. Go to https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbXdFM2lZN0dQN0M1OXZOQ0Y3T2pCenBidlpNQXxBQ3Jtc0tuMzNOWG92WmZBQWRWWmd2MzJoQlpQWVF3U29vUkRyNnM5WXllVndKOXJZNi1UVG1GbmI2TGJlM3A0WTB0bk1rUmNHby1zRF9fTmJ4QzdwcDBWQl92QnY2ekxqWExZVzZKRUx5T2taOWUyMXpudmtFQQ&q=https%3A%2F%2Fdiscord.com%2Fdevelopers%2Fapplications to get started ')
     
     
-envVar='ODg1ODA5MTY3MTMzMTg0MDIw.YTscEg.N1VER8Us9yTELY-TGoet5PPxqEE'
-#osenv=os.getenv('OS')
-#print('TOKEN=',osenv)
+osenv=os.getenv('OS')
+print('TOKEN=',osenv)
 
 keep_alive()
-client.run(envVar)
+client.run(osenv)
 
